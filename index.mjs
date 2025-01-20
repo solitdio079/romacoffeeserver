@@ -24,7 +24,7 @@ app.use(express.json())
 app.post("/franchise", async (req, res) => {
     const { fullName, email, phone, town, district, message } = req.body
      var msg = {
-       to: 'solitdio079@gmail.com',
+       to: 'romacoffeetea37@gmail.com',
        from: process.env.EMAIL,
        subject: 'Franchising Talebi',
        text: `Ad Soyad:${fullName}.\r\n\ Email:${email}.\r\n\ Telefon:${phone}.\r\n\ il:${town}.\r\n\ ilçe:${district}\r\n\ Mesaj: ${message}`,
